@@ -11,15 +11,15 @@ public class FibRecursive {
     
     public static void main(String[] args) {
     	
-        long baslangic = System.currentTimeMillis();  // Programın başlangıç zamanı. Milisaniye cinsinden
+        long baslangic = System.currentTimeMillis(); 
         
         for(int i=10;i<100;i+=10){
         	
             System.out.print(i + ". fib degeri = " + fibonacci(i));  
-            long bitis = System.currentTimeMillis();  // Fib. sayısının bulunduğu andaki zaman. Milisaniye cinsinden
-            long gecenSure = bitis - baslangic;       // Bulunana kadar geçen süre
+            long bitis = System.currentTimeMillis();  
+            long gecenSure = bitis - baslangic;       
             
-            System.out.println("  ==> " + (double)gecenSure/1000 + "sn");  // Milisaniye/1000 = saniye
+            System.out.println("  ==> " + (double)gecenSure/1000 + "sn");  
             
         }
     }
